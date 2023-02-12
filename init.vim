@@ -28,7 +28,7 @@ Plug 'yegappan/taglist'
 Plug 'nvim-treesitter/nvim-treesitter'
 call plug#end()
 
-""""""""""""""""""""""" Regular configuration
+" Basic configuration
 let mapleader = ","
 imap ,, <Esc>
 set ru
@@ -41,6 +41,7 @@ set mouse=
 set clipboard=unnamed
 " Set the Tab to 2 spaces
 set ai
+set autoindent
 set tabstop=2
 set shiftwidth=2
 " barbar tag
@@ -48,7 +49,6 @@ nnoremap gt :bnext<CR>
 nnoremap gT :bprevious<CR>
 nnoremap gd <Cmd>BufferClose<CR>
 """"""""""""""""""""" theme
-set termguicolors
 lua require('hardline').setup {}
 "lua require('nvim-web-devicons').get_icon(filename, extension, { default = true })
 lua require('nvim-web-devicons').get_icons()
