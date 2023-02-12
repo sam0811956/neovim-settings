@@ -143,9 +143,9 @@ require('telescope').setup {
 	defaults = {
 		mappings = {
 			i = {
-						["<esc>"] = actions.close,
-						["<C-k>"] = actions.move_selection_previous,
-						["<C-j>"] = actions.move_selection_next,
+				["<esc>"] = actions.close,
+				["<C-k>"] = actions.move_selection_previous,
+				["<C-j>"] = actions.move_selection_next,
 			}
 		},
 		extensions = {
@@ -158,6 +158,7 @@ require('telescope').setup {
 		}
 	}
 }
+
 require('telescope').load_extension('fzf')
 EOF
 
